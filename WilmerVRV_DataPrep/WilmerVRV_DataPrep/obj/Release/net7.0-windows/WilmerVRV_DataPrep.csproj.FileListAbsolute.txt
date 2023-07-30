@@ -21,3 +21,5 @@ C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVR
 C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Release\net7.0-windows\WilmerVRV_DataPrep.pdb
 C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Release\net7.0-windows\WilmerVRV_DataPrep.genruntimeconfig.cache
 C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Release\net7.0-windows\ref\WilmerVRV_DataPrep.dll
+C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Release\net7.0-windows\AssemblyInfo.g.cs
+C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Release\net7.0-windows\GitVersionInformation.g.cs
