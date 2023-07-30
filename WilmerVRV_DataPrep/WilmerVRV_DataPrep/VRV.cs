@@ -44,7 +44,7 @@ namespace WilmerVRV_DataPrep
             { "Car", new int[]{0, 0, 0 } },
             { "Computer_Screen", new int[]{0, 0, 0 } },
             { "Cursor", new int[]{0, 0, 0 } },
-            { "Fliker_Frequency", new int[]{0, 0, 0 } },
+            { "Flicker_Frequency", new int[]{0, 0, 0 } },
             { "Flicker_Brightness", new int[]{0, 0, 0 } },
             { "Hand_Movement", new int[]{0, 0, 0 } },
             { "Light_Behind_Screen", new int[]{0, 0, 0 } },

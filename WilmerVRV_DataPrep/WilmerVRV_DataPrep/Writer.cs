@@ -38,6 +38,9 @@ namespace WilmerVRV_DataPrep
         private static List<WilmerVRVData> MergeLists(List<List<WilmerVRVData>> playlist)
         {
             List<WilmerVRVData> mergedList = new List<WilmerVRVData>();
+            mergedList.AddRange(WilmerVRV_tests.PracticeRoomLight());
+            mergedList.AddRange(WilmerVRV_tests.PracticeTowel());
+            mergedList.AddRange(WilmerVRV_tests.PracticeBottle());
             foreach (var item in playlist)
             {
                 mergedList.AddRange(item);
