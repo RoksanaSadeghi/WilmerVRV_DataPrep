@@ -5,6 +5,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows;
 
 namespace WilmerVRV_DataPrep
 {
@@ -14,12 +15,26 @@ namespace WilmerVRV_DataPrep
 
         public static void CreateMultipleJasons(List<List<WilmerVRVData>> playlist, int numOfPlaylists, string outputDir)
         {
-            for (int i = 0; i < numOfPlaylists; i++)
+            try
             {
-                string outputFile = Path.Combine(outputDir,i.ToString());
-                List<WilmerVRVData> p = MergeLists(RandomizeOrder(playlist));
-                CreateAJason(p, outputFile);
+                for (int i = 0; i < numOfPlaylists; i++)
+                {
+                    string outputFile = Path.Combine(outputDir, i.ToString().PadLeft(3, '0'));
+                    List<WilmerVRVData> p = MergeLists(RandomizeOrder(playlist));
+                    CreateAJason(p, outputFile);
+                }
+
+                string messageBoxText = "Finished: Output file(s) are created in the requested directory.\n" + outputDir;
+                string caption = "Successful";
+                MessageBoxButton button = MessageBoxButton.OK;
+                MessageBoxImage icon = MessageBoxImage.None;
+                MessageBoxResult result;
+
+                result = MessageBox.Show(messageBoxText, caption, button, icon, MessageBoxResult.Yes);
+
             }
+            catch (Exception ex) { MessageBox.Show("ERROR: The output didn't created.\n"+ex.ToString()); }
+
 
         }
         

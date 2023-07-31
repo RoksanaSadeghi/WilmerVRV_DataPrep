@@ -107,9 +107,15 @@ namespace WilmerVRV_DataPrep
             object obj = new WilmerVRV_tests();
             Type type = obj.GetType();
 
-            int numberOfTests = Convert.ToInt32(NumberOfTestsTextBox.Text);
-            int numberOfPlaylists = Convert.ToInt32(NumberOfPlaylistsTextBox.Text);
             int time = 3;
+            int numberOfTests;
+            int numberOfPlaylists;
+
+            if ( !int.TryParse(NumberOfTestsTextBox.Text, out numberOfTests) || !int.TryParse(NumberOfPlaylistsTextBox.Text, out numberOfPlaylists))
+            {
+                MessageBox.Show("Please correct the input.");
+                return;
+            }
 
             //add the selected tests to the list
             List<List<WilmerVRVData>> selectedTasks = new(); 
