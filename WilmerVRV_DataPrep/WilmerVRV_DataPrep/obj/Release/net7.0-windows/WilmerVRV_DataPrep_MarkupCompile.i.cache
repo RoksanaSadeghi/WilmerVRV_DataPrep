@@ -1,5 +1,5 @@
 ﻿WilmerVRV_DataPrep
-0.1.0.0
+0.1.1.0
 
 winexe
 C#
@@ -16,5 +16,5 @@ C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVR
 208-623758195
 MainWindow.xaml;
 
-False
+True
 
