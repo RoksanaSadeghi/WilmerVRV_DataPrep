@@ -19,10 +19,15 @@ namespace WilmerVRV_DataPrep
             {
                 for (int i = 0; i < numOfPlaylists; i++)
                 {
-                    string outputFile = Path.Combine(outputDir, i.ToString().PadLeft(3, '0'));
+                    string outputFile = Path.Combine(outputDir, (i+1).ToString().PadLeft(3, '0'));
                     List<WilmerVRVData> p = MergeLists(RandomizeOrder(playlist));
                     CreateAJason(p, outputFile);
                 }
+
+                //create the default one for the demo
+                string defaultFile = Path.Combine(outputDir, "default");
+                List<WilmerVRVData> default_p = DefaultJason();
+                CreateAJason(default_p, defaultFile);
 
                 string messageBoxText = "Finished: Output file(s) are created in the requested directory.\n" + outputDir;
                 string caption = "Successful";
@@ -44,6 +49,7 @@ namespace WilmerVRV_DataPrep
             string json = JsonSerializer.Serialize(experimentList_);
             json = json.Replace("\\u0027", "'");
             File.WriteAllText(outputFile + ".json", json);
+
         }
         private static List<List<WilmerVRVData>> RandomizeOrder(List<List<WilmerVRVData>> playlist)
         {
@@ -60,6 +66,36 @@ namespace WilmerVRV_DataPrep
             {
                 mergedList.AddRange(item);
             }
+            return mergedList;
+        }
+
+        private static List<WilmerVRVData> DefaultJason()
+        {
+            List<WilmerVRVData> mergedList = new List<WilmerVRVData>();
+            mergedList.AddRange(WilmerVRV_tests.PracticeRoomLight());
+            mergedList.AddRange(WilmerVRV_tests.PracticeTowel());
+            mergedList.AddRange(WilmerVRV_tests.PracticeBottle());
+
+            mergedList.AddRange(WilmerVRV_tests.Ball());
+            mergedList.AddRange(WilmerVRV_tests.Bottle());
+            mergedList.AddRange(WilmerVRV_tests.Candle());
+            mergedList.AddRange(WilmerVRV_tests.Car());
+            mergedList.AddRange(WilmerVRV_tests.ComputerScreen());
+            mergedList.AddRange(WilmerVRV_tests.Cursor());
+            mergedList.AddRange(WilmerVRV_tests.FlickerBrightness());
+            mergedList.AddRange(WilmerVRV_tests.FlickerFrequency());
+            mergedList.AddRange(WilmerVRV_tests.HandMovement());
+            mergedList.AddRange(WilmerVRV_tests.LightBehindScreen());
+            mergedList.AddRange(WilmerVRV_tests.Pill());
+            mergedList.AddRange(WilmerVRV_tests.PlaceSetting());
+            mergedList.AddRange(WilmerVRV_tests.RoomLight());
+            mergedList.AddRange(WilmerVRV_tests.Smudge());
+            mergedList.AddRange(WilmerVRV_tests.Tie());
+            mergedList.AddRange(WilmerVRV_tests.Towel());
+            mergedList.AddRange(WilmerVRV_tests.TubeOfCream());
+            mergedList.AddRange(WilmerVRV_tests.VerticalLine());
+            mergedList.AddRange(WilmerVRV_tests.WindowBlinds());
+            
             return mergedList;
         }
 
