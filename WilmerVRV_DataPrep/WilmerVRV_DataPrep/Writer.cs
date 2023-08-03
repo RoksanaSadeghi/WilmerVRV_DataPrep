@@ -43,7 +43,7 @@ namespace WilmerVRV_DataPrep
             ExperimentList experimentList_ = new ExperimentList { experiments_list = playlist };
             string json = JsonSerializer.Serialize(experimentList_);
             json = json.Replace("\\u0027", "'");
-            File.WriteAllText(outputFile, json);
+            File.WriteAllText(outputFile + ".json", json);
         }
         private static List<List<WilmerVRVData>> RandomizeOrder(List<List<WilmerVRVData>> playlist)
         {

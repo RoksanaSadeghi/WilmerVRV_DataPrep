@@ -107,11 +107,11 @@ namespace WilmerVRV_DataPrep
             object obj = new WilmerVRV_tests();
             Type type = obj.GetType();
 
-            int time = 3;
+            int time;
             int numberOfTests;
             int numberOfPlaylists;
 
-            if ( !int.TryParse(NumberOfTestsTextBox.Text, out numberOfTests) || !int.TryParse(NumberOfPlaylistsTextBox.Text, out numberOfPlaylists))
+            if ( !int.TryParse(NumberOfTestsTextBox.Text, out numberOfTests) || !int.TryParse(NumberOfPlaylistsTextBox.Text, out numberOfPlaylists) || !int.TryParse(TimeTextBox.Text, out time))
             {
                 MessageBox.Show("Please correct the input.");
                 return;

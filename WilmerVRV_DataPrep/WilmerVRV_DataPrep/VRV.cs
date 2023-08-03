@@ -98,7 +98,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "15-rolling-ball",
+                        sceneName = "17-rolling-ball",
                         sceneTitle = "Soccer Ball",
                         sceneIndex = 17,
                         presentationTime = time,
@@ -115,7 +115,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "15-rolling-ball",
+                        sceneName = "17-rolling-ball",
                         sceneTitle = "Soccer Ball",
                         sceneIndex = 17,
                         presentationTime = time,
@@ -216,7 +216,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "02-laundry-detergent-bottle",
+                        sceneName = "04-laundry-detergent-bottle",
                         sceneTitle = "Bottle",
                         sceneIndex = 4,
                         presentationTime = time,
@@ -233,7 +233,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "02-laundry-detergent-bottle",
+                        sceneName = "04-laundry-detergent-bottle",
                         sceneTitle = "Bottle",
                         sceneIndex = 4,
                         presentationTime = time,
@@ -334,7 +334,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "04-candles",
+                        sceneName = "06-candles",
                         sceneTitle = "Candle",
                         sceneIndex = 6,
                         presentationTime = time,
@@ -351,7 +351,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "04-candles",
+                        sceneName = "06-candles",
                         sceneTitle = "Candle",
                         sceneIndex = 6,
                         presentationTime = time,
@@ -452,7 +452,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "09-formular-1",
+                        sceneName = "11-formula-1",
                         sceneTitle = "Car",
                         sceneIndex = 11,
                         presentationTime = time,
@@ -469,7 +469,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "09-formular-1",
+                        sceneName = "11-formula-1",
                         sceneTitle = "Car",
                         sceneIndex = 11,
                         presentationTime = time,
@@ -570,7 +570,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "05-computer-screen",
+                        sceneName = "07-computer-screen",
                         sceneTitle = "Computer Screen",
                         sceneIndex = 7,
                         presentationTime = time,
@@ -587,7 +587,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "05-computer-screen",
+                        sceneName = "07-computer-screen",
                         sceneTitle = "Computer Screen",
                         sceneIndex = 7,
                         presentationTime = time,
@@ -678,7 +678,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "08-moving-cursor",
+                        sceneName = "10-moving-cursor",
                         sceneTitle = "Cursor",
                         sceneIndex = 10,
                         presentationTime = time,
@@ -695,7 +695,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "08-moving-cursor",
+                        sceneName = "10-moving-cursor",
                         sceneTitle = "Cursor",
                         sceneIndex = 10,
                         presentationTime = time,
@@ -769,7 +769,7 @@ namespace WilmerVRV_DataPrep
             }
         }
 
-        public static List<WilmerVRVData> FlickerFrequency(string level = "easy", int numTest = 3, int time = 3, bool demo = true)
+        public static List<WilmerVRVData> FlickerBrightness(string level = "easy", int numTest = 3, int time = 3, bool demo = true)
         {
             List<WilmerVRVData> data = new();
 
@@ -779,22 +779,22 @@ namespace WilmerVRV_DataPrep
             {
                 case "easy":
                     level_ToggleName = "Easy Video";
-                    level_PrettyName = "3.5 Hz";
+                    level_PrettyName = "30% Contrast";
                     break;
 
                 case "medium":
                     level_ToggleName = "Medium Video";
-                    level_PrettyName = "11.7 Hz";
+                    level_PrettyName = "10% Contrast";
                     break;
 
                 case "hard":
                     level_ToggleName = "Hard Video";
-                    level_PrettyName = "35 Hz";
+                    level_PrettyName = "3% Contrast";
                     break;
 
                 default:
                     level_ToggleName = "Easy Video";
-                    level_PrettyName = "3.5 Hz";
+                    level_PrettyName = "30% Contrast";
                     break;
             }
 
@@ -806,9 +806,9 @@ namespace WilmerVRV_DataPrep
                 {
                     data.Add(
                     new WilmerVRVData()
-                    {
-                        sceneName = "19-flickering-refresh-rate",
-                        sceneTitle = "Flickering (Refresh Variation)",
+                    {//note that the name in the wilmerVR program is mistakenly replaced by the contrast variation but this playlist would generate the correct scene and save the data correctly
+                        sceneName = "21-flickering-refresh-rate",
+                        sceneTitle = "Flickering (Contrast Variation)",
                         sceneIndex = 21,
                         presentationTime = time,
                         option_dict = item
@@ -823,9 +823,9 @@ namespace WilmerVRV_DataPrep
             {
                 data.Add(
                     new WilmerVRVData()
-                    {
-                        sceneName = "19-flickering-refresh-rate",
-                        sceneTitle = "Flickering (Refresh Variation)",
+                    {//note that the name in the wilmerVR program is mistakenly replaced by the contrast variation but this playlist would generate the correct scene and save the data correctly
+                        sceneName = "21-flickering-refresh-rate",
+                        sceneTitle = "Flickering (Contrast Variation)",
                         sceneIndex = 21,
                         presentationTime = time,
                         option_dict = new Option_dict
@@ -877,7 +877,7 @@ namespace WilmerVRV_DataPrep
             }
         }
 
-        public static List<WilmerVRVData> FlickerBrightness(string level = "easy", int numTest = 3, int time = 3, bool demo = true)
+        public static List<WilmerVRVData> FlickerFrequency(string level = "easy", int numTest = 3, int time = 3, bool demo = true)
         {
             List<WilmerVRVData> data = new();
 
@@ -887,22 +887,22 @@ namespace WilmerVRV_DataPrep
             {
                 case "easy":
                     level_ToggleName = "Easy Video";
-                    level_PrettyName = "30% Contrast";
+                    level_PrettyName = "3.5 Hz";
                     break;
 
                 case "medium":
                     level_ToggleName = "Medium Video";
-                    level_PrettyName = "10% Contrast";
+                    level_PrettyName = "11.7 Hz";
                     break;
 
                 case "hard":
                     level_ToggleName = "Hard Video";
-                    level_PrettyName = "3% Contrast";
+                    level_PrettyName = "35 Hz";
                     break;
 
                 default:
                     level_ToggleName = "Easy Video";
-                    level_PrettyName = "30% Contrast";
+                    level_PrettyName = "3.5 Hz";
                     break;
             }
 
@@ -914,9 +914,9 @@ namespace WilmerVRV_DataPrep
                 {
                     data.Add(
                     new WilmerVRVData()
-                    {
-                        sceneName = "18-flickering-contrast",
-                        sceneTitle = "Flickering (Contrast Variation)",
+                    {//note that the name in the wilmerVR program is mistakenly replaced by the refresh variation but this playlist would generate the correct scene and save the data correctly
+                        sceneName = "20-flickering-contrast",
+                        sceneTitle = "Flickering (Refresh Variation)",
                         sceneIndex = 20,
                         presentationTime = time,
                         option_dict = item
@@ -931,9 +931,9 @@ namespace WilmerVRV_DataPrep
             {
                 data.Add(
                     new WilmerVRVData()
-                    {
-                        sceneName = "18-flickering-contrast",
-                        sceneTitle = "Flickering (Contrast Variation)",
+                    {//note that the name in the wilmerVR program is mistakenly replaced by the refresh variation but this playlist would generate the correct scene and save the data correctly
+                        sceneName = "20-flickering-contrast",
+                        sceneTitle = "Flickering (Refresh Variation)",
                         sceneIndex = 20,
                         presentationTime = time,
                         option_dict = new Option_dict
@@ -1023,7 +1023,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "10-hand-gestures",
+                        sceneName = "12-hand-gestures",
                         sceneTitle = "Hand Movements",
                         sceneIndex = 12,
                         presentationTime = time,
@@ -1040,7 +1040,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "10-hand-gestures",
+                        sceneName = "12-hand-gestures",
                         sceneTitle = "Hand Movements",
                         sceneIndex = 12,
                         presentationTime = time,
@@ -1131,7 +1131,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "07-white-spot-on-screen",
+                        sceneName = "09-white-spot-on-screen",
                         sceneTitle = "Light Behind Screen",
                         sceneIndex = 9,
                         presentationTime = time,
@@ -1148,7 +1148,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "07-white-spot-on-screen",
+                        sceneName = "09-white-spot-on-screen",
                         sceneTitle = "Light Behind Screen",
                         sceneIndex = 9,
                         presentationTime = time,
@@ -1261,7 +1261,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "17-pill",
+                        sceneName = "19-pill",
                         sceneTitle = "Pill",
                         sceneIndex = 19,
                         presentationTime = time,
@@ -1278,7 +1278,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "17-pill",
+                        sceneName = "19-pill",
                         sceneTitle = "Pill",
                         sceneIndex = 19,
                         presentationTime = time,
@@ -1379,7 +1379,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "16-place-setting-missing",
+                        sceneName = "18-place-setting-missing",
                         sceneTitle = "Place Setting",
                         sceneIndex = 18,
                         presentationTime = time,
@@ -1396,7 +1396,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "16-place-setting-missing",
+                        sceneName = "18-place-setting-missing",
                         sceneTitle = "Place Setting",
                         sceneIndex = 18,
                         presentationTime = time,
@@ -1509,7 +1509,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "003-pre-test-bottle",
+                        sceneName = "02-pre-test-bottle",
                         sceneTitle = "Bottle (Pretest)",
                         sceneIndex = 2,
                         presentationTime = time,
@@ -1526,7 +1526,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "003-pre-test-bottle",
+                        sceneName = "02-pre-test-bottle",
                         sceneTitle = "Bottle (Pretest)",
                         sceneIndex = 2,
                         presentationTime = time,
@@ -1617,7 +1617,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "001-pre-test-roomlight",
+                        sceneName = "00-pre-test-roomlight",
                         sceneTitle = "Room Light (Pretest)",
                         sceneIndex = 0,
                         presentationTime = time,
@@ -1634,7 +1634,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "001-pre-test-roomlight",
+                        sceneName = "00-pre-test-roomlight",
                         sceneTitle = "Room Light (Pretest)",
                         sceneIndex = 0,
                         presentationTime = time,
@@ -1715,7 +1715,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "002-pre-test-towel",
+                        sceneName = "01-pre-test-towel",
                         sceneTitle = "Towel (Pretest)",
                         sceneIndex = 1,
                         presentationTime = time,
@@ -1732,7 +1732,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "002-pre-test-towel",
+                        sceneName = "01-pre-test-towel",
                         sceneTitle = "Towel (Pretest)",
                         sceneIndex = 1,
                         presentationTime = time,
@@ -1833,7 +1833,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "06-room-light",
+                        sceneName = "08-room-light",
                         sceneTitle = "Room Light",
                         sceneIndex = 8,
                         presentationTime = time,
@@ -1850,7 +1850,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "06-room-light",
+                        sceneName = "08-room-light",
                         sceneTitle = "Room Light",
                         sceneIndex = 8,
                         presentationTime = time,
@@ -1941,7 +1941,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "13-smudge-mirror",
+                        sceneName = "15-smudge-mirror",
                         sceneTitle = "Smudge",
                         sceneIndex = 15,
                         presentationTime = time,
@@ -1958,7 +1958,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "13-smudge-mirror",
+                        sceneName = "15-smudge-mirror",
                         sceneTitle = "Smudge",
                         sceneIndex = 15,
                         presentationTime = time,
@@ -2071,7 +2071,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "11-tie",
+                        sceneName = "13-tie",
                         sceneTitle = "Tie",
                         sceneIndex = 13,
                         presentationTime = time,
@@ -2088,7 +2088,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "11-tie",
+                        sceneName = "13-tie",
                         sceneTitle = "Tie",
                         sceneIndex = 13,
                         presentationTime = time,
@@ -2179,7 +2179,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "01-towel-on-rack",
+                        sceneName = "03-towel-on-rack",
                         sceneTitle = "Towel",
                         sceneIndex = 3,
                         presentationTime = time,
@@ -2196,7 +2196,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "01-towel-on-rack",
+                        sceneName = "03-towel-on-rack",
                         sceneTitle = "Towel",
                         sceneIndex = 3,
                         presentationTime = time,
@@ -2297,7 +2297,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "12-tube-of-cream",
+                        sceneName = "14-tube-of-cream",
                         sceneTitle = "Tube of Cream",
                         sceneIndex = 14,
                         presentationTime = time,
@@ -2314,7 +2314,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "12-tube-of-cream",
+                        sceneName = "14-tube-of-cream",
                         sceneTitle = "Tube of Cream",
                         sceneIndex = 14,
                         presentationTime = time,
@@ -2416,7 +2416,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "14-guitar-strap",
+                        sceneName = "16-guitar-strap",
                         sceneTitle = "Vertical Line",
                         sceneIndex = 16,
                         presentationTime = time,
@@ -2433,7 +2433,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "14-guitar-strap",
+                        sceneName = "16-guitar-strap",
                         sceneTitle = "Vertical Line",
                         sceneIndex = 16,
                         presentationTime = time,
@@ -2534,7 +2534,7 @@ namespace WilmerVRV_DataPrep
                     data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "03-window-blinds",
+                        sceneName = "05-window-blinds",
                         sceneTitle = "Window Blinds",
                         sceneIndex = 5,
                         presentationTime = time,
@@ -2551,7 +2551,7 @@ namespace WilmerVRV_DataPrep
                 data.Add(
                     new WilmerVRVData()
                     {
-                        sceneName = "03-window-blinds",
+                        sceneName = "05-window-blinds",
                         sceneTitle = "Window Blinds",
                         sceneIndex = 5,
                         presentationTime = time,
