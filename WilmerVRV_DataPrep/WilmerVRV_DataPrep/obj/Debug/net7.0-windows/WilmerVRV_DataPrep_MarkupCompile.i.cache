@@ -1,5 +1,5 @@
 ﻿WilmerVRV_DataPrep
-0.2.1.0
+1.0.0.0
 
 winexe
 C#
@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET7_0;NETCOREAPP
 C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\App.xaml
-11407045341
+2852999967
 
-91448774587
+10-1898023918
 208-623758195
-MainWindow.xaml;
+MainWindow.xaml;PracticeScene.xaml;
 
 True
 

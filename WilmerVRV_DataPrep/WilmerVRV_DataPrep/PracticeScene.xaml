@@ -1,0 +1,65 @@
+﻿<Window x:Class="WilmerVRV_DataPrep.PracticeScene"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WilmerVRV_DataPrep"
+        mc:Ignorable="d"
+        Title="WilmerVRV Practice Scenes" Height="400" Width="550" 
+        ResizeMode="CanResizeWithGrip">
+
+    <Window.Resources>
+
+        <Style x:Key="lB" TargetType="ListBox">
+            <Setter Property="ScrollViewer.HorizontalScrollBarVisibility"
+                Value="Disabled" />
+            <Setter Property="ScrollViewer.VerticalScrollBarVisibility"
+                Value="Disabled" />
+            <Setter Property="HorizontalContentAlignment"
+                    Value="Left"/>
+            <Setter Property="VerticalContentAlignment"
+                    Value="Top"/>
+            <Setter Property="VerticalAlignment"
+                    Value="Top"/>
+            <Setter Property="HorizontalAlignment"
+                    Value="Left"/>
+            <Setter Property="ItemsPanel">
+                <Setter.Value>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+
+    </Window.Resources>
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <Grid x:Name="MainGrid">
+            <Grid.RowDefinitions>
+                <RowDefinition x:Name="LabelsGR" Height="Auto"/>
+                <RowDefinition x:Name="ListGR" Height="Auto"/>
+                <RowDefinition x:Name="OptionsGR" Height="Auto"/>
+                <RowDefinition x:Name="SubmitGR" Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <ListBox x:Name="TaskListBox" BorderBrush="#FF202020" Background="#FAFAFA" Margin="10,0,10,0" 
+                 ScrollViewer.VerticalScrollBarVisibility="Auto" 
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled" 
+                 Grid.Row="1">
+                <ListBox.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel Orientation="Horizontal"/>
+                    </ItemsPanelTemplate>
+                </ListBox.ItemsPanel>
+            </ListBox>
+
+            <Button x:Name="TestNameBtn" Content="Scene Name" FontSize="12" Background="White" Width="100" Height="20" Grid.Row="0" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" ButtonBase.Click="TestNameBtn_Click"/>
+
+            <Button x:Name="Select" Content="Select Practice Scenes" FontSize="14" Width="400" Height="50" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,10,0,0" Click="Select_Click"/>
+
+
+        </Grid>
+    </ScrollViewer>
+</Window>

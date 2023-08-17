@@ -65,7 +65,7 @@
             <TextBox x:Name="NumberOfTestsTextBox" Text="3" HorizontalContentAlignment="Center" FontSize="12" Background="white" Width="60" Height="20" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="150,15,0,0"/>
 
             <Label x:Name="TimeLabel" Content="Time Between Scenes (s):" FontSize="12" Background="White" Width="Auto" Height="25" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,45,0,0" />
-            <TextBox x:Name="TimeTextBox" Text="3" HorizontalContentAlignment="Center" FontSize="12" Background="white" Width="60" Height="20" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="150,50,0,0"/>
+            <TextBox x:Name="TimeTextBox" Text="1" HorizontalContentAlignment="Center" FontSize="12" Background="white" Width="60" Height="20" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="150,50,0,0"/>
 
             <Label x:Name="NumberofPlaylistsLabel" Content="Number of Playlists:" FontSize="12" Background="White" Width="Auto" Height="25" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,80,0,0" />
             <TextBox x:Name="NumberOfPlaylistsTextBox" Text="1" HorizontalContentAlignment="Center" FontSize="12" Background="white" Width="60" Height="20" Grid.Row="2" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="150,85,0,0"/>

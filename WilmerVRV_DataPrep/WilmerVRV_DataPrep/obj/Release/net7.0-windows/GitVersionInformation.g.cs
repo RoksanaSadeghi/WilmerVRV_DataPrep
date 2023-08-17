@@ -39,7 +39,7 @@ static class GitVersionInformation
     public static string WeightedPreReleaseNumber = "60000";
     public static string BuildMetaData = "";
     public static string BuildMetaDataPadded = "";
-    public static string FullBuildMetaData = "Branch.main.Sha.0757915cca39c96e49d81c81cfdb3a6a11fe2097";
+    public static string FullBuildMetaData = "Branch.main.Sha.119a59a9315b3a64aa3d989be0cdaf4503e228ec";
     public static string MajorMinorPatch = "1.0.0";
     public static string SemVer = "1.0.0";
     public static string LegacySemVer = "1.0.0";
@@ -47,18 +47,18 @@ static class GitVersionInformation
     public static string AssemblySemVer = "1.0.0.0";
     public static string AssemblySemFileVer = "1.0.0.0";
     public static string FullSemVer = "1.0.0";
-    public static string InformationalVersion = "1.0.0+Branch.main.Sha.0757915cca39c96e49d81c81cfdb3a6a11fe2097";
+    public static string InformationalVersion = "1.0.0+Branch.main.Sha.119a59a9315b3a64aa3d989be0cdaf4503e228ec";
     public static string BranchName = "main";
     public static string EscapedBranchName = "main";
-    public static string Sha = "0757915cca39c96e49d81c81cfdb3a6a11fe2097";
-    public static string ShortSha = "0757915";
+    public static string Sha = "119a59a9315b3a64aa3d989be0cdaf4503e228ec";
+    public static string ShortSha = "119a59a";
     public static string NuGetVersionV2 = "1.0.0";
     public static string NuGetVersion = "1.0.0";
     public static string NuGetPreReleaseTagV2 = "";
     public static string NuGetPreReleaseTag = "";
-    public static string VersionSourceSha = "0757915cca39c96e49d81c81cfdb3a6a11fe2097";
+    public static string VersionSourceSha = "119a59a9315b3a64aa3d989be0cdaf4503e228ec";
     public static string CommitsSinceVersionSource = "0";
     public static string CommitsSinceVersionSourcePadded = "0000";
-    public static string UncommittedChanges = "0";
+    public static string UncommittedChanges = "7";
     public static string CommitDate = "2023-08-03";
 }

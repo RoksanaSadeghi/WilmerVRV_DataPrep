@@ -31,8 +31,15 @@ namespace WilmerVRV_DataPrep
         public string ToggleName { get; set; }
         public string PrettyName { get; set; }
     }
-
-
+    public class WilmerVRV_Practice
+    {
+        public Dictionary<string, int> wilmerVRVPracticeTasks = new Dictionary<string, int>()
+        {
+            { "Practice_RoomLight",0 },
+            {"Practice_Towel",0 },
+            {"Practice_Bottle",0 }
+        };
+    }
     public class WilmerVRV_tests
     {
 

@@ -23,3 +23,5 @@ C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVR
 C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Debug\net7.0-windows\WilmerVRV_DataPrep.csproj.CopyComplete
 C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Debug\net7.0-windows\AssemblyInfo.g.cs
 C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Debug\net7.0-windows\GitVersionInformation.g.cs
+C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Debug\net7.0-windows\PracticeScene.g.cs
+C:\Users\roksana.s.sadeghi\Documents\gitRepos\RS_WilmerVRV_DataPrep_WPF\WilmerVRV_DataPrep\WilmerVRV_DataPrep\obj\Debug\net7.0-windows\PracticeScene.baml

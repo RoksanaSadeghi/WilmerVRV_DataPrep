@@ -32,7 +32,12 @@ namespace WilmerVRV_DataPrep
         bool hardAll = true;
 
         WilmerVRV_tests vrv = new WilmerVRV_tests();
-        
+        public static List<List<WilmerVRVData>> selectedTasks = new();
+
+        public static int time;
+        public static int numberOfTests;
+        public static int numberOfPlaylists;
+
         public MainWindow()
         {
             InitializeComponent();
@@ -107,10 +112,6 @@ namespace WilmerVRV_DataPrep
             object obj = new WilmerVRV_tests();
             Type type = obj.GetType();
 
-            int time;
-            int numberOfTests;
-            int numberOfPlaylists;
-
             if ( !int.TryParse(NumberOfTestsTextBox.Text, out numberOfTests) || !int.TryParse(NumberOfPlaylistsTextBox.Text, out numberOfPlaylists) || !int.TryParse(TimeTextBox.Text, out time))
             {
                 MessageBox.Show("Please correct the input.");
@@ -118,7 +119,7 @@ namespace WilmerVRV_DataPrep
             }
 
             //add the selected tests to the list
-            List<List<WilmerVRVData>> selectedTasks = new(); 
+            selectedTasks = new(); 
             foreach (var item in vrv.wilmerVRVTasks) 
             {
                 if (item.Value[0] == 0 && item.Value[1] == 0 && item.Value[2] == 0) { continue; }
@@ -143,12 +144,10 @@ namespace WilmerVRV_DataPrep
                 selectedTasks.Add(t);
             }
 
-            var dialog = new Ookii.Dialogs.Wpf.VistaFolderBrowserDialog();
-            if (dialog.ShowDialog(this).GetValueOrDefault())
-            {
-                string outputDir = dialog.SelectedPath;
-                Writer.CreateMultipleJasons(selectedTasks, numberOfPlaylists, outputDir);
-            }
+            //PracticeScenes;
+            PracticeScene practiceScenesWindow = new PracticeScene();
+            practiceScenesWindow.Show();
+
 
         }
 
