@@ -61,7 +61,7 @@ namespace WilmerVRV_DataPrep
                 List<WilmerVRVData> t = new List<WilmerVRVData>();
 
                 MethodInfo method = type.GetMethod(methodName);
-                t.AddRange(method.Invoke(obj, new object[] { "easy", MainWindow.time }) as List<WilmerVRVData>);
+                t.AddRange(method.Invoke(obj, new object[] { "easy", MainWindow.numberOfTests, MainWindow.time, true }) as List<WilmerVRVData>);
 
                 selectedPracticeTasks.Add(t);
             }

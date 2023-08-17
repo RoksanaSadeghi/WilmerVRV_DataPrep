@@ -8,6 +8,6 @@
 
 using System.Reflection;
 
-[assembly: AssemblyFileVersion("1.0.1.0")]
-[assembly: AssemblyVersion("1.0.1.0")]
-[assembly: AssemblyInformationalVersion("1.0.1+1.Branch.main.Sha.d04a94995ca6bf7ce8d25040e4bd6244b7ac549c")]
+[assembly: AssemblyFileVersion("2.0.0.0")]
+[assembly: AssemblyVersion("2.0.0.0")]
+[assembly: AssemblyInformationalVersion("2.0.0+Branch.main.Sha.0e8e89240fe0f73b99d724eef093db79d35bb0bf")]
